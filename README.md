@@ -89,11 +89,3 @@ Luego abre `http://localhost:8080`.
 
 ---
 
-## Opcional: publicar la imagen en Docker Hub
-
-```bash
-docker login
-docker push branpazmino/miproyectoweb:latest
-```
-
-(Debes iniciar sesión como el propietario del repositorio `branpazmino/miproyectoweb` en Docker Hub.)
