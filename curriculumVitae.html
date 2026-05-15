@@ -1,121 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Curriculum Vitae BAPR</title>
-    <link rel="icon" type="image/x-icon" href="./Imagenes/iconocv.ico">
-    <link rel="stylesheet" href="./Plantilla.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portafolio y CV de Brandon Alexander Pazmiño Rodas — software, ciberseguridad y colaboración con fundadores tech, negocios locales y reclutadores." />
+  <title>Brandon Pazmiño — Portafolio y CV</title>
+  <link rel="icon" type="image/x-icon" href="./Imagenes/iconocv.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./Plantilla.css" />
+  <!--
+    Datos y textos del sitio (edita aquí).
+    Imagen de portada: ./Imagenes/FotoPerfil.jpeg
+    Formulario: al enviar se abre WhatsApp con el texto (usa un poco de JS en onsubmit).
+  -->
 </head>
-
 <body>
-    <main>
-    <aside id="InfPersonal">
 
-        <img src="./Imagenes/FotoPerfil.jpeg" alt="Foto Carnet" height="200">
-      
-    
-        <section id="PerfilProfesional">
-            <h2>Perfil Profesional</h2>
-            <p>Estudiante de Ingeniería de Software en la Universidad de las Fuerzas Armadas-ESPE, enfocado en desarrollo Fullstack, informática forense e investigación académica.</p>
-            <p>Líder del área de Ciberseguridad en OpenHub, con experiencia en organización de eventos tecnológicos y competencias internacionales de programación. Orientado a resolver problemas complejos usando Python, Java y C++, con compromiso hacia la excelencia académica y la innovación.</p>
-            <p>20 años</p>
-            <p>Quito, Ecuador</p>
-            <p><strong>Idiomas:</strong> Español (nativo), Inglés (intermedio)</p>
-            <p>2005-06-09</p>
-        </section>
-        
-   
+  <header class="encabezado" id="inicio">
+    <nav class="encabezado-navegacion" aria-label="Principal">
+      <a class="encabezado-marca" href="#portada">Brandon Pazmiño</a>
+      <a class="encabezado-contacto" href="#contacto">Contáctame</a>
+    </nav>
+  </header>
 
-        <address>
-             <h2>Contacto</h2>
-                <a href="https://wa.me/593963757486"><strong>CONTACTAME! YA!</strong></a>
-                <a href="https://www.linkedin.com/in/brandon-alexander-pazmi%C3%B1o-rodas-722594385/"><strong>Estoy en LinkedIn!</strong></a>
-                <a href="mailto:pazminob558@gmail.com" target="_blank"><strong>Mi email!</strong></a>
-        </address>
-    </aside>
+  <main>
+    <!-- Portada -->
+    <section class="portada" id="portada" aria-labelledby="titulo-portada">
+      <div class="contenedor portada-rejilla">
+        <div class="portada-visual">
+          <img class="portada-foto" src="./Imagenes/FotoPerfil.jpeg" alt="Brandon Alexander Pazmiño Rodas" width="160" height="160" />
+          <h1 class="portada-titulo" id="titulo-portada">
+            <span class="resaltado">Confianza digital</span> con rigor técnico: software, seguridad y equipos que entregan.
+          </h1>
+          <p class="portada-resumen">
+            Estudiante de Ingeniería de Software en la ESPE (2023–actualidad), beca de excelencia académica 2025. Enfoque en desarrollo full stack, informática forense e investigación aplicada. Lidero ciberseguridad en OpenHub: CTF, hackathons y talleres prácticos. Hablo con fundadores tech, negocios locales y reclutadores en un lenguaje claro y accionable.
+          </p>
+          <p class="portada-meta">Quito, Ecuador · 20 años · Español (nativo), inglés (intermedio)</p>
+          <div class="portada-acciones">
+            <a class="boton-principal" href="#valor">Ver mi trabajo</a>
+            <a class="boton-secundario" href="https://github.com/brandonapr" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <aside class="portada-panel" aria-label="Resumen rápido">
+          <p><strong>Club y comunidad:</strong> Coordinación técnica en CTF ESPE, Defensor Hack Challenge, DEV RUSH y eventos con voluntarios y sponsors.</p>
+          <p><strong>Stack y herramientas:</strong> Python, Java, C++, HTML, CSS y JavaScript; MongoDB y MySQL; Docker, Postman y GitHub.</p>
+          <p><strong>Trayectoria previa:</strong> Ventas independientes (2021–2022) y apoyo en obra civil (2019–2020) — disciplina, negociación y trabajo bajo presión.</p>
+          <div class="portada-enlaces">
+            <a href="https://github.com/brandonapr" target="_blank" rel="noopener noreferrer">GitHub — brandonapr</a>
+            <a href="https://www.linkedin.com/in/brandon-alexander-pazmi%C3%B1o-rodas-722594385/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://wa.me/593963757486" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-    <article id="Nombre">
-        <h1>Brandon Alexander Pazmiño Rodas</h1>
-    </article>
+    <!-- Acerca -->
+    <section class="seccion" id="acerca" aria-labelledby="titulo-acerca">
+      <div class="contenedor">
+        <h2 class="seccion-titulo" id="titulo-acerca">Acerca de mí</h2>
+        <div class="dos-columnas texto-cuerpo">
+          <div>
+            <p>Soy <strong>Brandon Alexander Pazmiño Rodas</strong>. Me mueve unir seguridad ofensiva y defensiva con productos usables: menos fricción, más claridad para quien no vive en la terminal.</p>
+            <p>En OpenHub diseño rutas de aprendizaje, apoyo logística de retos tipo CTF y talleres con herramientas actuales. Busco colaboraciones donde importe medir riesgo, comunicar bien y aprender en público.</p>
+          </div>
+          <div>
+            <p><strong>Formación:</strong> Ingeniería de Software en la ESPE. Bachillerato en la Unidad Educativa MAUE (2017–2022) con diploma al mérito académico y de honor.</p>
+            <p><strong>Habilidades:</strong> Entornos VS Code, Cursor, Visual Studio, NetBeans, Code::Blocks, MATLAB, RStudio y Eclipse; diseño con Photoshop e Illustrator.</p>
+            <p><strong>Intereses:</strong> Andinismo y planificación de rutas; running 5K–10K; cocina como creatividad y ejecución.</p>
+          </div>
+        </div>
 
-    <article id="Contenido">
-        <section class="lista">
-            <h2>Experiencia</h2>
-            
-            <h3>Líder del Área de Ciberseguridad | Club OpenHub - ESPE</h3>
-            <p><strong>2024 - Actualidad</strong></p>
-            <ul>
-                <li>Direccioné estrategias de aprendizaje en seguridad ofensiva y defensiva para miembros del club.</li>
-                <li>Coordino liderazgo y logística en eventos como Capture The Flag (CTF) - ESPE, Defensor Hack Challenge - ESPE y DEV RUSH.</li>
-                <li>Facilité talleres técnicos sobre herramientas de seguridad y desarrollo.</li>
-            </ul>
-            
-            <h3>Vendedor Independiente</h3>
-            <p><strong>2021 - 2022</strong> | Desarrollé habilidades de negociación, gestión de clientes y cumplimiento de metas.</p>
-            
-            <h3>Ayudante de Obra (Construcción) - La Maná</h3>
-            <p><strong>2019-2020</strong> | Apoyé en la ejecución de proyectos de infraestructura residencial, desarrollando disciplina y trabajo bajo presión.</p>
-        </section>
-        <section class="texto">
-            <h2>Formación Académica</h2>
-            <h3>Universidad de las Fuerzas Armadas ESPE</h3>
-            <p>Ingeniería de Software | <strong>2023 - Actualidad</strong></p>
-            <ul>
-                <li>Beca de Excelencia Académica (2025) por alto rendimiento y promedio destacado.</li>
-            </ul>
-            
-            <h3>Unidad Educativa MAUE</h3>
-            <p>Bachillerato | <strong>2017 - 2022</strong></p>
-            <ul>
-                <li>Reconocimientos: Diploma al Mérito Académico y Diploma de Honor.</li>
-                <li>Liderazgo en proyectos estudiantiles y coordinación de tareas grupales.</li>
-            </ul>
-        </section>
-        <section class="lista">
-            <h2>Habilidades Técnicas</h2>
-            <ul>
-                <li><strong>Lenguajes:</strong> Python, Java, C++.</li>
-                <li><strong>Bases de datos:</strong> MongoDB, mySQL.</li> <li><strong>Herramientas / DevOps:</strong> Docker, Postman, Github, HTML, CSS, JavaScript.</li>
-                <li><strong>Entornos:</strong> VS Code, Cursor, VS Community, Apache NetBeans, Code::Blocks, MATLAB, RStudio, Eclipse.</li>
-                <li><strong>Diseño:</strong> Adobe Photoshop, Illustrator.</li>
-            </ul>
-        </section>
-        <section class="lista">
-            <h2>Certificaciones y Cursos</h2>
-            <ul>
-                <li>Seminario de Inteligencia Artificial: De la Idea a la Innovación | IEP y FEUE</li>
-                <li>MATLAB Onramp | MathWorks Training Services</li>
-                <li>Linux para Ciberseguridad - Mención en Informática Forense | Academia Hacker Mentor</li>
-                <li>Peritaje e Informática Forense CSI | Academia Hacker Mentor</li>
-                <li>Webinar "Creando Ciberseguridad desde Cero" | XTC Seguridad</li> 
-                <li>Certificado de Iniciación al Desarrollo con IA | BIG school</li>
-                <li>Ciberseguridad y Hacking Ético | BIG school</li>
-                <li>Diplomado en Informática: DCA Sistemas.</li>
-            </ul>
-        </section>
-        <section class="lista">
-            <h2>Logros y Eventos</h2>
-            <ul>
-                <li>IEEEXTREME 19.0 (2025): Participante en competencia global de programación de 24 horas.</li>
-                <li>Congreso CIT 2025: Participante en la categoría Poster Científico.</li>
-                <li>Participante en DevFest 2025, Summer Byte y PRIVACIQ.</li>
-                <li>Membresías: IEEE Student Member, GDG Quito.</li>
-            </ul>
-        </section>
-        <section class="lista">
-            <h2>Intereses</h2>
-            <ul>
-                <li><strong>Andinismo:</strong> resiliencia y planificación de rutas críticas.</li>
-                <li><strong>Running:</strong> corredor de media distancia (5K y 10K), enfocado en disciplina y salud física.</li>
-                <li><strong>Cocina:</strong> creatividad y ejecución práctica.</li>
-            </ul>
-        </section>
-    </article>
-    
-    </main>
-    <hr/>
-    <footer>
-        <p>&copy; 2026 Curriculum Personal de Brandon Alexander Pazmiño Rodas. Todos los derechos reservados.</p>
-    </footer>
+        <div class="certificaciones-bloque">
+          <h3 class="certificaciones-titulo" id="certificaciones">Certificaciones y cursos</h3>
+          <ul class="certificaciones-rejilla">
+            <li class="certificacion-item"><div class="certificacion-texto">MATLAB Onramp · MathWorks</div></li>
+            <li class="certificacion-item"><div class="certificacion-texto">Linux para ciberseguridad e informática forense · Academia Hacker Mentor</div></li>
+            <li class="certificacion-item"><div class="certificacion-texto">Peritaje e informática forense CSI · Academia Hacker Mentor</div></li>
+            <li class="certificacion-item"><div class="certificacion-texto">IA: de la idea a la innovación · IEP y FEUE</div></li>
+            <li class="certificacion-item"><div class="certificacion-texto">Ciberseguridad y hacking ético · BIG school</div></li>
+            <li class="certificacion-item"><div class="certificacion-texto">Iniciación al desarrollo con IA · BIG school</div></li>
+            <li class="certificacion-item"><div class="certificacion-texto">Webinar «Creando ciberseguridad desde cero» · XTC Seguridad</div></li>
+            <li class="certificacion-item"><div class="certificacion-texto">Diplomado en informática · DCA Sistemas</div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Valor / servicios -->
+    <section class="seccion" id="valor" aria-labelledby="titulo-valor">
+      <div class="contenedor">
+        <h2 class="seccion-titulo" id="titulo-valor">Lo que puedo aportar</h2>
+        <div class="rejilla-valor">
+          <article class="tarjeta-valor">
+            <div class="tarjeta-icono" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Ciberseguridad aplicada</h3>
+            <p>Talleres introductorios, laboratorios guiados y apoyo en CTF para subir la cultura de seguridad sin perderse en la jerga.</p>
+          </article>
+          <article class="tarjeta-valor">
+            <div class="tarjeta-icono" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Software y automatización</h3>
+            <p>Prototipos web, scripts en Python y prácticas con APIs y bases de datos para validar ideas antes de escalar coste.</p>
+          </article>
+          <article class="tarjeta-valor">
+            <div class="tarjeta-icono" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Comunidad y operación</h3>
+            <p>Coordinación de eventos, mentoreo a pares y puente claro entre voluntarios, sponsors y participantes.</p>
+          </article>
+          <article class="tarjeta-valor tarjeta-valor-ancho">
+            <h3>Proyectos, competencias y comunidades</h3>
+            <p>
+              <a href="https://github.com/brandonapr" target="_blank" rel="noopener noreferrer">Repositorio personal en GitHub</a>
+              · Liderazgo de ciberseguridad y actividades en OpenHub (ESPE).
+              <strong>Competencias y congresos:</strong> IEEEXTREME 19.0 (2025), CIT 2025 (póster científico), DevFest 2025, Summer Byte y PRIVACIQ.
+              <strong>Membresías:</strong> IEEE Student Member y GDG Quito.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cierre: CTA + formulario + pie -->
+    <section class="franja-cierre" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="contenedor franja-cierre-rejilla">
+        <div>
+          <h2 id="titulo-contacto">¿Reto técnico u oportunidad laboral?</h2>
+          <p class="franja-cierre-lead">Si buscas alguien con hambre de aprender, experiencia organizando equipos técnicos y bases sólidas en desarrollo y seguridad, escríbeme. Priorizo mensajes con contexto concreto.</p>
+          <div class="franja-cierre-botones">
+            <a class="boton-principal" href="mailto:pazminob558@gmail.com">Escribir por correo</a>
+            <a class="boton-secundario" href="https://github.com/brandonapr" target="_blank" rel="noopener noreferrer">Ver mi trabajo</a>
+          </div>
+        </div>
+
+        <form class="formulario-pregunta" action="#" method="get" onsubmit="event.preventDefault();var nombre=document.getElementById('nombre').value;var correo=document.getElementById('correo').value.trim();var org=document.getElementById('organizacion').value;var msg=document.getElementById('mensaje').value;var texto='Hola, soy '+nombre+(org?' de '+org:'')+'.'+(correo?' Mi correo: '+correo+'.':'')+' '+msg;window.open('https://wa.me/593963757486?text='+encodeURIComponent(texto),'_blank');">
+          <h3>Hazme una pregunta</h3>
+          <p class="ayuda">Tu mensaje se abrirá en WhatsApp para que lo envíes desde tu dispositivo.</p>
+          <div class="campo">
+            <label for="nombre">Tu nombre</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required placeholder="Ej. María — People @ startup" />
+          </div>
+          <div class="campo">
+            <label for="correo">Correo (opcional, para que pueda responderte por otro canal)</label>
+            <input id="correo" name="correo" type="email" autocomplete="email" placeholder="tu@correo.com" />
+          </div>
+          <div class="campo">
+            <label for="organizacion">Empresa o proyecto (opcional)</label>
+            <input id="organizacion" name="organizacion" type="text" autocomplete="organization" placeholder="Ej. Negocio local Quito" />
+          </div>
+          <div class="campo">
+            <label for="mensaje">Tu pregunta</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Cuéntame qué necesitas: colaboración, prácticas, revisión de perfil…"></textarea>
+          </div>
+          <button class="boton-principal" type="submit">Enviar pregunta por WhatsApp</button>
+        </form>
+      </div>
+
+      <footer class="pie-pagina">
+        <div class="contenedor pie-pagina-contenido">
+          <address class="pie-pagina-datos">
+            <span><strong>Brandon Alexander Pazmiño Rodas</strong></span>
+            <a href="mailto:pazminob558@gmail.com">pazminob558@gmail.com</a>
+            <a href="https://wa.me/593963757486" target="_blank" rel="noopener noreferrer">WhatsApp (+593)</a>
+          </address>
+          <div class="pie-pagina-redes">
+            <a href="https://github.com/brandonapr" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/brandon-alexander-pazmi%C3%B1o-rodas-722594385/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://wa.me/593963757486" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+          <p class="pie-pagina-legal">© 2026 Brandon Alexander Pazmiño Rodas. Quito, Ecuador.</p>
+        </div>
+      </footer>
+    </section>
+  </main>
 </body>
 </html>
